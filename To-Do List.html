@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="To-Do List.css">
+</head>
+
+<body>
+
+<header>
+    <h2>To-Do List Web App</h2>
+</header>
+
+<div class="container">
+
+    <!-- Left Form -->
+    <div class="task-form">
+        <input type="text" placeholder="Title" required>
+
+        <textarea placeholder="Description" rows="10" required></textarea>
+
+        <button class="save-btn">Save</button>
+    </div>
+
+
+    <!-- Right Task List -->
+    <div class="task-list">
+
+        <div class="heading">
+            <span>Title</span>
+            <span>Description</span>
+            <span>Delete</span>
+        </div>
+
+        <hr>
+
+        <!-- Pending Tasks -->
+        <h3>Pending Tasks</h3>
+
+        <div class="task">
+            <span>Title</span>
+            <span>Short description</span>
+            <button class="delete">X</button>
+        </div>
+
+        <div class="task">
+            <span>Title Next</span>
+            <span>Next short description</span>
+            <button class="delete">X</button>
+        </div>
+
+
+        <!-- Completed Tasks -->
+        <h3>Completed Tasks</h3>
+
+        <div class="task completed">
+            <span>Completed Task</span>
+            <span>Task finished successfully</span>
+            <button class="delete">X</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

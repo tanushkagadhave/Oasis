@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#1e2235;
+    color:white;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+}
+
+.logo{
+    background:#ffb400;
+    color:#1e2235;
+    font-weight:700;
+    padding:10px 14px;
+    border-radius:50%;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+
+nav ul li{
+    color:#aaa;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav ul li:hover,
+.active{
+    color:#ffb400;
+}
+
+/* HERO SECTION */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 80px;
+}
+
+.hero-left h1{
+    font-size:60px;
+    font-weight:700;
+    line-height:1.1;
+}
+
+.hero-left span{
+    color:#ffb400;
+}
+
+.line{
+    width:50px;
+    height:4px;
+    background:#ffb400;
+    margin:20px 0;
+}
+
+.social span{
+    margin-right:15px;
+    cursor:pointer;
+}
+
+.hero-center img{
+    width:350px;
+}
+
+.hero-right{
+    max-width:400px;
+}
+
+.hero-right .intro{
+    color:#ffb400;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.hero-right h2{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.hero-right .desc{
+    color:#bbb;
+    margin-bottom:20px;
+}
+
+.btn{
+    text-decoration:none;
+    color:#ffb400;
+    font-weight:600;
+}
+
+/* ABOUT SECTION */
+.about{
+    display:flex;
+    justify-content:space-between;
+    padding:80px;
+    background:#232744;
+}
+
+.about-left{
+    max-width:300px;
+}
+
+.about-left .small{
+    color:#ffb400;
+    font-size:14px;
+}
+
+.about-left a{
+    color:#ffb400;
+    text-decoration:none;
+}
+
+.about-right{
+    max-width:600px;
+}
+
+.about-right h2{
+    margin-bottom:30px;
+}
+
+.stats{
+    display:flex;
+    gap:60px;
+}
+
+.stats h3{
+    color:#ffb400;
+    font-size:30px;
+}
+
+/* SERVICES */
+.services{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:80px;
+}
+
+.card{
+    background:#2a2f4a;
+    padding:40px;
+    width:250px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.active-card{
+    background:#ffb400;
+    color:#1e2235;
+}

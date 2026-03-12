@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./Temperature Converter.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Temperature Converter</h1>
+
+        <!-- Input Field -->
+        <input 
+            type="text" 
+            id="temperatureInput" 
+            placeholder="Enter temperature">
+
+        <!-- Unit Selection -->
+        <div class="unit-selection">
+            <label>
+                <input type="radio" name="unit" value="celsius" checked>
+                Celsius
+            </label>
+            <label>
+                <input type="radio" name="unit" value="fahrenheit">
+                Fahrenheit
+            </label>
+        </div>
+
+        <!-- Convert Button -->
+        <button onclick="convertTemperature()">Convert</button>
+
+        <!-- Result Display -->
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function convertTemperature() {
+            const input = document.getElementById("temperatureInput").value;
+            const result = document.getElementById("result");
+            const unit = document.querySelector('input[name="unit"]:checked').value;
+
+            // Validate input
+            if (input === "" || isNaN(input)) {
+                result.textContent = "❌ Please enter a valid number.";
+                result.style.color = "red";
+                return;
+            }
+
+            let convertedTemp;
+
+            if (unit === "celsius") {
+                convertedTemp = (input * 9/5) + 32;
+                result.textContent = `${convertedTemp.toFixed(2)} °F`;
+            } else {
+                convertedTemp = (input - 32) * 5/9;
+                result.textContent = `${convertedTemp.toFixed(2)} °C`;
+            }
+
+            result.style.color = "green";
+        }
+    </script>
+
+</body>
+</html>
